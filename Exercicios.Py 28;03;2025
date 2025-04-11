@@ -1,0 +1,77 @@
+ATIVIDADE 1
+idade = int (input ('Digite a sua idade:'))
+if idade > 0 and idade <=12:
+    print ('Você é Criança')
+
+elif idade <=13 and idade <=17:
+   print (input ('Você é um adolescente'))
+
+elif idade <=18 and idade >=100:
+    print (input('Você é um Adulto'))
+
+elif idade <100:
+    print (input('idade invalida'))
+
+
+ATIVIDADE 2
+Numero1 = int(input("Digite um número: "))
+Numero2 = int(input("Digite outro número: "))
+
+if Numero1 > Numero2:
+    print("O primeiro número é maior")
+elif Numero2 > Numero1:
+    print("O segundo número é maior")
+else:
+    print("Os valores são iguais!")
+
+
+ATIVIDADE 3
+letra = str(input('Digite uma letra: '))
+if letra == 'a' or letra == 'e' or letra == 'i' or letra == 'o' or letra == 'u':
+    print('A letra é uma vogal')
+else:
+    print('A letra é uma consoante')
+
+
+ATIVIDADE 4
+senha = str(input('Digite uma senha: '))
+confirmação = str(input('Confirme a senha: '))
+if confirmação == senha:
+    print('Acesso permitido')
+else:
+    print('Acesso negado')
+
+
+ATIVIDADE 5
+if 0 <= not 1 <= 10 and 0 <= nota2 <= 10 and 0 <= nota 3 <= 10:
+   
+ media = (nota1 + nota2 + nota3) / 3
+
+ print(f"\nMédia: {media:.1f}")
+    if media >= 7:
+print("Aluno APROVADO!")
+    else:
+       print("Aluno REPROVADO!")
+else:
+  print("Erro: As notas devem estar entre 0 e 10!")
+
+
+ATIVIDADE 6
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+num3 = int(input("Digite o terceiro número: "))
+
+numeros = [num1, num2, num3]
+numeros.sort(reverse=True)
+
+print("\nNúmeros em ordem decrescente:")
+for numero in numeros:
+   print(numero)
+
+
+ATIVIDADE 7
+tempo_gasto = int(input('Quanto tempo durou a viagem (em horas): '))
+velocidade_media = int(input('Qual foi a velocidade media da viagem (em km/h): '))
+distancia = tempo_gasto * velocidade_media
+litros = distancia /12
+print(f'Seu tempo gasto foi de: {tempo_gasto}horas, sua velocidade média foi de: {velocidade_media}km/h, sua distância foi de: {distancia}km e sua quantidade de litros gasta foi de: {litros} litros')
