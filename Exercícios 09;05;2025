@@ -1,0 +1,137 @@
+Exercício 1
+numero1 = int (input ('Digite o primeiro número: '))
+numero2 = int (input ('Digite o segundo número: '))
+numero3 = int (input ('Digite o terceiro número: '))
+numero4 = int (input ('Digite o quarto número: '))
+numero5 = int (input ('Digite o quinto número: '))
+
+soma = numero1 + numero2 + numero3 + numero4 + numero5
+
+print ('A soma dos números é: ', soma)
+
+
+ Exercício 2
+numero1 = int (input ('Digite o primeiro número: '))
+numero2 = int (input ('Digite o segundo número: '))
+numero3 = int (input ('Digite o terceiro número: '))
+numero4 = int (input ('Digite o quarto número: '))
+
+ if numero1 > numero2 and numero1 > numero3 and numero1 > numero4:
+   print ('O maior número é: ', numero1)
+elif numero2 > numero1 and numero2 > numero3 and numero2 > numero4:
+    print ('O maior número é: ', numero2)
+elif numero3 > numero1 and numero3 > numero2 and numero3 > numero4:
+   print ('O maior número é: ', numero3)
+elif numero4 > numero1 and numero4 > numero2 and numero4 > numero3:
+    print ('O maior número é: ', numero4)
+
+if numero1 < numero2 and numero1 < numero3 and numero1 < numero4:
+    print ('O menor número é: ', numero1)
+elif numero2 < numero1 and numero2 < numero3 and numero2 < numero4:
+    print ('O menor número é: ', numero2)  
+elif numero3 < numero1 and numero3 < numero2 and numero3 < numero4:
+    print ('O menor número é: ', numero3)
+#elif numero4 < numero1 and numero4 < numero2 and numero4 < numero3:
+  print ('O menor número é: ', numero4)
+
+
+
+
+
+Exercício 3
+palavra = input ('Digite uma palavra: ')
+letraA = palavra.count ('a')
+letraE = palavra.count ('e')
+letraI = palavra.count ('i')
+letraO = palavra.count ('o')
+letraU = palavra.count ('u')
+soma = letraA + letraE + letraI + letraO + letraU
+print ('A quantidade de vogais na palavra é: ', soma)
+
+
+
+
+
+Exercício 4
+print ('Peça ao usuário para digitar 6 números e mostre apenas os números pares')
+
+numero1 = int(input('Digite o primeiro número'))
+numero2 = int(input('Digite o segundo número'))
+numero3 = int(input('Digite o terceiro número'))
+numero4 = int(input('Digite o quarto número'))
+numero5 = int(input('Digite o quinto número'))
+numero6 = int(input('Digite o sexto número'))
+
+listaDePares = []
+
+listaDeNumeros = [numero1 , numero2, numero3, numero4, numero5, numero6]
+
+for numero in listaDeNumeros:
+    if numero % 2 == 0
+    listaDePares.append(numero)
+
+    if len(listaDePares) != 0:
+print(f"Os numeros pares digitados foram: {listaDePares}")
+    else:
+print("A lista não tem nenhum número par!")
+
+
+
+exercício 5 
+nota1 = int (input('Digite a primeira nota: '))
+nota2 = int (input('Digite a segunda nota: '))
+nota3 = int (input('Digite a terceira nota: '))
+nota4 = int (input('Digite a quarta nota: '))
+
+
+media = (nota1 + nota2 + nota3 + nota4) / 4
+print (f'A média é: {media}')
+
+
+
+
+Exercício 6
+numeroTabuada = int (input('Digite um número para saber sua tabuada: '))
+for numero in range(1, 11):
+    print(f"{numeroTabuada} X {numero} = {numeroTabuada * numero}")
+
+
+
+Exercício 7
+
+numeroN = int (input ('Digite um número para ver o resultado de 1 até o número digitado: '))
+for N in range(1, numeroN + 1):
+    print(f'{N}')
+
+
+
+Exercício 8
+
+Peça ao usuário uma palavra e mostre ela ao contrário.
+palavraDigitada = str (input("Digite uma palavra: "))
+print(f"Você digitou: {palavraDigitada}")
+PalavraInvertida = palavraDigitada[::-1]
+print(f"A palavra que você digitou invertida fica: {PalavraInvertida}")
+
+
+
+Exercício 9
+
+Peça um número ao usuário e diga se ele é múltiplo de 3.
+NumeroDigitado = int (input("Digite um número para saber se ele é múltiplo de 3: "))
+if NumeroDigitado % 3 == 0:
+    print(f"O número {NumeroDigitado} é um múltiplo de 3!")
+else:
+    print(f"o número {NumeroDigitado} não é um múltiplo de 3!")
+
+
+
+
+Exercício 10
+Peça ao usuário para digitar 3 nomes e mostre todos eles em ordem alfabética.
+Nome1 = str (input("Digite o primeiro nome: "))
+Nome2 = str (input("Digite o segundo nome: "))
+Nome3 = str (input("Digite o terceiro nome: "))
+ListaNomes = [Nome1, Nome2, Nome3]
+ListaNomes.sort(reverse=True)
+print (f"Os nome digitados em ordem alfabética fica: {ListaNomes}")
