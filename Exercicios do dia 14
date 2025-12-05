@@ -1,0 +1,88 @@
+Exercícios do dia 14/11
+
+1- def primos_no_intervalo(a, b):
+    primos = []
+    for num in range(a, b + 1):
+        if num < 2:
+            continue
+        for i in range(2, int(num ** 0.5) + 1):
+            if num % i == 0:
+                break
+        else:
+            primos.append(num)
+    return primos
+
+
+2 - def ordenar_sem_repeticao(lista):
+    return sorted(set(lista))
+
+
+
+3 - def soma_digitos(n):
+    return sum(int(d) for d in str(abs(n)))
+
+
+
+4 - def eh_palindromo(texto):
+    filtrado = ''.join(c.lower() for c in texto if c.isalnum())
+    return filtrado == filtrado[::-1]
+
+
+
+5 - def frequencia_palavras(texto):
+    palavras = texto.lower().split()
+    freq = {}
+    for p in palavras:
+        freq[p] = freq.get(p, 0) + 1
+    return freq
+
+
+
+
+6 - def media_lista(lista):
+    if not lista:
+        return None
+    return sum(lista) / len(lista)
+
+ 
+
+Testes unitários dos exercícios
+
+
+1 - def test_primos_no_intervalo(self):
+    self.assertEqual(primos_no_intervalo(1, 10), [2, 3, 5, 7])
+    self.assertEqual(primos_no_intervalo(10, 20), [11, 13, 17, 19])
+    self.assertEqual(primos_no_intervalo(0, 1), [])
+
+
+
+2 - def test_ordenar_sem_repeticao(self):
+    self.assertEqual(ordenar_sem_repeticao([3, 1, 2, 1]), [1, 2, 3])
+    self.assertEqual(ordenar_sem_repeticao([5, 5, 5]), [5])
+    self.assertEqual(ordenar_sem_repeticao([]), [])
+
+
+3 - def test_soma_digitos(self):
+    self.assertEqual(soma_digitos(123), 6)
+    self.assertEqual(soma_digitos(0), 0)
+    self.assertEqual(soma_digitos(-47), 11)
+
+
+
+4 - def test_eh_palindromo(self):
+    self.assertTrue(eh_palindromo('Ana'))
+    self.assertTrue(eh_palindromo('Ame a ema'))
+    self.assertFalse(eh_palindromo('Python'))
+
+
+
+5 - def test_frequencia_palavras(self):
+    self.assertEqual(frequencia_palavras('O gato e o rato'), {'o': 2, 'gato': 1, 'e': 1, 'rato': 1})
+    self.assertEqual(frequencia_palavras('banana banana uva'), {'banana': 2, 'uva': 1})
+    self.assertEqual(frequencia_palavras(''), {})
+
+
+6 - def test_media_lista(self):
+    self.assertEqual(media_lista([1, 2, 3]), 2.0)
+    self.assertEqual(media_lista([7]), 7.0)
+    self.assertEqual(media_lista([]), None)
